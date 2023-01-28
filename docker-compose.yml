@@ -1,0 +1,33 @@
+version: '3.1'
+
+services:
+  mi_db:
+    image: "mysql:8.0"
+    restart: always
+    ports:
+      - "3306:3306"
+    command: --init-file /data/application/init.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: mbit
+      MYSQL_DATABASE: Pictures
+      MYSQL_USER: mbit
+      MYSQL_PASSWORD: mbit
+    volumes:
+      - ./init.sql:/data/application/init.sql
+      - mysql-data:/var/lib/mysql
+
+
+  mi_api:
+    depends_on:
+      - mi_db
+    build: .
+    ports:
+      - "80:80"
+    restart: always
+    volumes:
+      - "Imagenes:/Imagenes"
+
+volumes:
+  mysql-data:
+  Imagenes:
+
