@@ -9,3 +9,10 @@ Esta apliación consta de los siguientes microservicios:
 
  - API: implementada en Flask y servida mediante waitress. 
  - Base de datos: se utiliza una base de datos MySQL 8.0.
+
+(*) Para especificar las credenciales para utilizar los servicios imagekit y imagga se debe crear un fichero llamado "credentials.json" que las incluya:
+ - "Public Key".
+ - "Private Key".
+ - "URL-endpoint".
+ - "API Key".
+ - "API Secret".
