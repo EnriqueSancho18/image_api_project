@@ -7,4 +7,5 @@ La aplicación permite subir fotos, las cuales se etiquetan automáticamente y s
 
 Esta apliación consta de los siguientes microservicios:
 
-API: implementada en Flask y servida mediante waitress. Base de datos: utilizaremos una base de datos MySQL 8.0.
+ - API: implementada en Flask y servida mediante waitress. 
+ - Base de datos: utilizaremos una base de datos MySQL 8.0.
