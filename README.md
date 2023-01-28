@@ -1,5 +1,5 @@
 # image_api_project
-Creación de una aplicación apificada basada en microservicios
+Creación de una aplicación apificada basada en microservicios.
 
 En este proyecto se ha creado una aplicación basada en microservicios, utilizando la tecnología Docker para ejecutar cada microservicio en un entorno reproducible.
 
